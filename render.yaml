@@ -1,6 +1,5 @@
 databases:
   - name: postgres
-    ipAllowList: []
     databaseName: RubyOnRailsVentas_development
     user: rails
 
