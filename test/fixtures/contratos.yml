@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  monto: 9.99
+  fecha: 2023-10-15
+  cliente: one
+
+two:
+  nombre: MyString
+  monto: 9.99
+  fecha: 2023-10-15
+  cliente: two

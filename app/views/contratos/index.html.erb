@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contratos#index</title>
+  <!-- Add any additional styles or meta tags here -->
+</head>
+<body>
+
+  <h1>Mini core de montos</h1>
+
+  <h2>Tabla de contratos</h2>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Contrato</th>
+        <th>Monto</th>
+        <th>Fecha</th>
+        <th>Cliente</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @contratos.each do |contrato| %>
+        <tr>
+          <td><%= contrato.nombre %></td>
+          <td><%= contrato.monto %></td>
+          <td><%= contrato.fecha %></td>
+          <td><%= contrato.cliente.nombre %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  
+  <h2></h2>
+
+  <%= form_with url: contratos_path, method: :get do |form| %>
+    <%= form.date_field :inicio %>
+    <%= form.date_field :fin %>
+    <%= form.submit "Submit" %>
+  <% end %>
+
+  <h2>Total por cliente</h2>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Cliente</th>
+        <th>Monto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @totales.each do |total| %>
+        <tr>
+          <td><%= total.cliente_nombre %></td>
+          <td><%= total.monto %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</body>
+</html>
