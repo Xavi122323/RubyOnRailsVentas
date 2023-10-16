@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: RubyOnRailsVentas_production
   username: RubyOnRailsVentas
   password: <%= ENV["RUBYONRAILSVENTAS_DATABASE_PASSWORD"] %>
