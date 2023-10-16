@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: RubyOnRailsVentas_development
+  database: RubyOnRailsVentas_development1
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -82,6 +82,6 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  database: RubyOnRailsVentas_production
+  database: RubyOnRailsVentas_development
   username: RubyOnRailsVentas
   password: <%= ENV["RUBYONRAILSVENTAS_DATABASE_PASSWORD"] %>
