@@ -1,7 +1,5 @@
 databases:
-  - name: postgres
-    databaseName: RubyOnRailsVentas_development
-    user: rails
+  - name: RubyOnRailsVentas
 
 services:
   - type: web
