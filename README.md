@@ -1,9 +1,10 @@
 # Diagrama de aplicación de Aplicación de ventas usando Ruby on Rails
 
 Link a la aplicación desplegada: https://rubyonrailsventas.onrender.com
+
 Debido a que el despliege se realizo en una versión gratuita de render solo esta desplegada por un tiempo mientras esta en uso tras ello se detiene y se tiene que volver a desplegar.
 
-![Ruby on Rails drawio](https://github.com/Xavi122323/RubyOnRailsVentas/assets/65315734/b5407d9e-daa9-445a-9b16-849eb91018d8)
+![Ruby on Rails drawio](https://github.com/Xavi122323/RubyOnRailsVentas/assets/65315734/9e61fdc5-95c5-46c6-92f6-6f2f036e267c)
 
 ## Explicación
 
